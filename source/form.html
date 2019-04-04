@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body>
+
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__slogan">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    </div>
+    <form class="questionary">
+      <fieldset class="questionary__info-user">
+        <ul class="questionary__list">
+          <li class="questionary__item">
+            <label class="questionary__label" for="name">Имя:<sup>*</sup></label>
+            <input class="questionary__input" id="name" type="text" placeholder="Барсик">
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__label" for="user-weight">Вес (кг):<sup>*</sup></label>
+            <input class="questionary__input" id="user-weight" type="text" placeholder="7">
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__label" for="age">Возраст (лет):<sup>*</sup></label>
+            <input class="questionary__input" id="age" type="text" placeholder="7">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="questionary__info-about">
+        <ul class="questionary__list">
+          <li class="questionary__item">
+            <label class="questionary__label">
+              <input class="questionary__input" type="radio" name="filter" id="weight" checked>
+              <span class="questionary__radio-box">Похудение</span>
+            </label>
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__item">
+              <input class="questionary__input" type="radio" name="filter" id="weight-up">
+              <span class="questionary__radio-box">Набор массы</span>
+            </label>
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__item">
+              <input class="questionary__input" type="radio" name="filter" id="tip">
+              <span class="questionary__radio-box">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="questionary__contacts">
+        <legend class="questionary__contacts-title">Контактные данные (владельца кота)</legend>
+        <ul class="questionary__list">
+          <li class="questionary__item">
+            <label class="questionary__label" for="email">E-mail:<sup>*</sup></label>
+            <input class="questionary__input" id="email" type="email" placeholder="kuklachev@gmail.com">
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__label" for="tel">Телефон:<sup>*</sup></label>
+            <input class="questionary__input" id="tel" type="tel" placeholder="8 (960) 900-60-90">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="questionary__comment">
+        <legend class="questionary__comment-title">Комментарий</legend>
+        <textarea class="questionary__comment-text" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+      <fieldset class="questionary__additional">
+        <ul class="questionary__list">
+          <li class="questionary__item">
+            <label class="questionary__label">
+              <input class="questionary__input" type="checkbox" name="filter" id="sweetener" checked>
+              <span class="questionary__radio-box">Сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__label">
+              <input class="questionary__input" type="checkbox" name="filter" id="water">
+              <span class="questionary__radio-box">Питьевая вода</span>
+            </label>
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__label">
+              <input class="questionary__input" type="checkbox" name="filter" id="milk">
+              <span class="questionary__radio-box">Молоко</span>
+            </label>
+          </li>
+          <li class="questionary__item">
+            <label class="questionary__label">
+              <input class="questionary__input" type="checkbox" name="filter" id="vitamins">
+              <span class="questionary__radio-box">Витамины</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="questionary__field">
+        <a class="questionary__button" href="#">Отправить заявку</a>
+        <p class="questionary__warning"><sup>*</sup> — Обязательные поля</p>
+      </div>
+    </form>
+  </main>
+
+</body>
+</html>
