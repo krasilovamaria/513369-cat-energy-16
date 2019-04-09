@@ -5,6 +5,7 @@
   align-items: center;
   color: $white;
   min-height: 480px;
+  text-align: center;
 }
 
 .main-content__slogan {
@@ -12,4 +13,13 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   align-items: center;
+  background-color: $green;
+}
+
+.main-content__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-top: 29px;
+  margin-bottom: 19px;
 }
