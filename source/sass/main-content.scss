@@ -1,0 +1,15 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+  min-height: 480px;
+}
+
+.main-content__slogan {
+  min-height: 305px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  align-items: center;
+}
