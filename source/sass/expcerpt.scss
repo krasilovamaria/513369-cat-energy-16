@@ -10,6 +10,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 20px;
+
   &::before {
     position: absolute;
     content: "";
@@ -79,6 +80,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+
   &::after {
     position: absolute;
     left: 116px;
