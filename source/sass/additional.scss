@@ -38,7 +38,7 @@
 
 .additional__table {
   color: #444444;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   margin-bottom: 14px;
 }
 
@@ -60,7 +60,7 @@
   margin-bottom: 35px;
   width: 280px;
   height: 289px;
-  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
 }
 
 .additional__icon {
@@ -73,7 +73,7 @@
   color: $white;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   width: 159px;
   text-align: center;
   margin-left: 60px;

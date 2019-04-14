@@ -10,16 +10,16 @@
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 20px;
-  &::before {
-  position: absolute;
-  content: "";
-  left: 22px;
-  top: 25px;
-  width: 50px;
-  height: 50px;
-  background-color: $green;
-  border-radius: 50px;
-}
+    &:before {
+       position: absolute;
+       content: "";
+       left: 22px;
+       top: 25px;
+       width: 50px;
+       height: 50px;
+       background-color: $green;
+       border-radius: 50px;
+      }
 }
 
 .excerpt__image {
@@ -69,23 +69,23 @@
   font-size: 14px;
   color: #444444;
   line-height: 18px;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   text-align: left;
 }
 
 .excerpt__link {
   text-transform: uppercase;
-  font-family: "OswaldRegular","Arial Narrow","Arial",sans-serif;
+  font-family: "OswaldRegular", "Arial Narrow", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  &::after {
-  position: absolute;
-  left: 116px;
-  bottom: 23px;
-  content: "";
-  width: 25px;
-  height: 12px;
-  background-image: url(../img/icon-right-arrow-long.svg);
-}
+    &:after {
+      position: absolute;
+      left: 116px;
+      bottom: 23px;
+      content: "";
+      width: 25px;
+      height: 12px;
+      background-image: url("../img/icon-right-arrow-long.svg");
+    }
 }

@@ -13,8 +13,8 @@
   font-size: 36px;
   line-height: 60px;
   font-family: $font;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-top: -3px;
   margin-left: 20px;
 }
@@ -52,46 +52,46 @@
   background-position: 50%;
 }
 
-.advantages__icon-leaf::after {
+.advantages__icon-leaf:after {
   @include icon;
   width: 26px;
   height: 29px;
   top: 13px;
   left: 37px;
-  background-image: url(../img/advantage-leaf@1x.png);
+  background-image: url("../img/advantage-leaf@1x.png");
 }
 
-.advantages__icon-powder::after {
+.advantages__icon-powder:after {
   @include icon;
   width: 29px;
   height: 32px;
   top: 11px;
   left: 36px;
-  background-image: url(../img/advantage-powder@1x.png);
+  background-image: url("../img/advantage-powder@1x.png");
 }
 
-.advantages__icon-dining::after {
+.advantages__icon-dining:after {
   @include icon;
   width: 24px;
   height: 30px;
   top: 13px;
   left: 36px;
-  background-image: url(../img/advantage-dining@1x.png);
+  background-image: url("../img/advantage-dining@1x.png");
 }
 
-.advantages__icon-clock::after {
+.advantages__icon-clock:after {
   @include icon;
   width: 26px;
   height: 31px;
   top: 13px;
   left: 36px;
-  background-image: url(../img/advantage-clock@1x.png);
+  background-image: url("../img/advantage-clock@1x.png");
 }
 
 .advantages__text {
   margin: 0;
   padding: 0;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   color: #444444;
   font-size: 14px;
   line-height: 18px;
