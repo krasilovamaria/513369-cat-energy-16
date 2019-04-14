@@ -1,0 +1,91 @@
+.excerpt__list {
+  @include list-reset;
+}
+
+.excerpt__item {
+  position: relative;
+  background-color: #f2f2f2;
+  min-height: 266px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  &::before {
+  position: absolute;
+  content: "";
+  left: 22px;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: $green;
+  border-radius: 50px;
+}
+}
+
+.excerpt__image {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.excerpt__image-slim {
+  top: 23px;
+  left: 30px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+}
+
+.excerpt__image-weight {
+  top: 36px;
+  left: 14px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+}
+
+.excerpt__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: $font;
+  text-align: left;
+  margin-top: 11px;
+  margin-left: 71px;
+  margin-bottom: 28px;
+}
+
+.excerpt__description {
+  width: 240px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cdcdcd;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+  line-height: 18px;
+  font-family: Arial;
+  text-align: left;
+}
+
+.excerpt__link {
+  text-transform: uppercase;
+  font-family: "OswaldRegular","Arial Narrow","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  &::after {
+  position: absolute;
+  left: 116px;
+  bottom: 23px;
+  content: "";
+  width: 25px;
+  height: 12px;
+  background-image: url(../img/icon-right-arrow-long.svg);
+}
+}

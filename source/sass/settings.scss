@@ -1,17 +1,44 @@
 html {
-  font-size: 14px;
-  line-height: 14px;
-  color: $black;
-  background-color: $white;
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
   padding: 0;
   margin: 0;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $black;
+  background-color: $white;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  display: block;
+  width: 280px;
+  height: 40px;
+  font-family: inherit;
+  color: $white;
+  background-color: $green;
+  text-transform: uppercase;
+  border: 0;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
 }
 

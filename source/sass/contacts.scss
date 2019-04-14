@@ -1,0 +1,30 @@
+.contacts__address {
+  display: flex;
+  padding-top: 28px;
+  padding-left: 19px;
+  padding-bottom: 26px;
+}
+
+.contacts__call {
+  width: 143px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "OswaldRegular","Arial Narrow","Arial",sans-serif;
+  font-weight: 400;
+  padding-right: 19px;
+}
+
+.contacts__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial",sans-serif;
+  color: #444444;
+  width: 140px;
+}
+
+.contacts__map {
+  background-color: #fdf7ef;
+}
+
+

@@ -2,6 +2,7 @@ $white: #ffffff;
 $black: #111111;
 $green: #68b738;
 $grey: #e6e6e6;
+$font: "OswaldRegular","Arial Narrow",sans-serif;
 
 @mixin button-reset {
   padding: 0;
@@ -12,3 +13,17 @@ $grey: #e6e6e6;
   cursor: pointer;
 }
 
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+
+@mixin title {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}
