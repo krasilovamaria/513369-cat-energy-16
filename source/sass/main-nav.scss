@@ -1,0 +1,37 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toogle {
+  width: 25px;
+  height: 19px;
+  position: absolute;
+  right: 0;
+  top: -29px;
+  background-image: url("../img/icon-mobile-menu.svg");
+
+  @include button-reset;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "OswaldMedium", "Arial Narrow", sans-serif;
+  font-weight: 500;
+}
+
+.site-list__item {
+  padding: 24px 0;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-top: 1px solid $grey;
+}

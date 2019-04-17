@@ -1,0 +1,94 @@
+@mixin icon {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.advantages {
+  margin-bottom: 40px;
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  margin-top: -3px;
+  margin-bottom: 30px;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  position: relative;
+  align-items: center;
+  min-height: 60px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.advantages__text {
+  margin: 0;
+  padding-left: 100px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.advantages__text::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  left: 20px;
+  top: -2px;
+  background-color: $green;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.advantages__icon-leaf::after {
+  @include icon;
+
+  width: 26px;
+  height: 29px;
+  top: 13px;
+  left: 37px;
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.advantages__icon-powder::after {
+  @include icon;
+
+  width: 29px;
+  height: 32px;
+  top: 11px;
+  left: 36px;
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.advantages__icon-dining::after {
+  @include icon;
+
+  width: 24px;
+  height: 30px;
+  top: 13px;
+  left: 36px;
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.advantages__icon-clock::after {
+  @include icon;
+
+  width: 26px;
+  height: 31px;
+  top: 13px;
+  left: 36px;
+  background-image: url("../img/advantage-clock@1x.png");
+}

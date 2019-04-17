@@ -1,0 +1,43 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+  min-height: 480px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 22px;
+  font-family: "OswaldRegular", "Arial Narrow", sans-serif;
+}
+
+.main-content-color {
+  color: $black;
+}
+
+.main-content__slogan {
+  min-height: 305px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  align-items: center;
+  background-color: $green;
+}
+
+.main-content__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-top: 28px;
+  margin-bottom: 39px;
+  text-align: center;
+}
+
+.main-content__intro {
+  text-transform: uppercase;
+}
+
+.main-content__image {
+  position: absolute;
+  top: 167px;
+  right: 20px;
+}

@@ -1,0 +1,89 @@
+.meta {
+  background-color: #f2f2f2;
+}
+
+.meta-wrapper {
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 34px;
+}
+
+.meta__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: "OswaldRegular", "Arial Narrow", "Arial", sans-serif;
+  font-weight: 400;
+  margin-bottom: 23px;
+}
+
+.meta__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  margin-bottom: 25px;
+}
+
+.meta__list {
+  display: flex;
+
+  @include list-reset;
+}
+
+.meta__list-border {
+  position: relative;
+  margin-right: 32px;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+}
+
+.meta__weight {
+  margin-top: 13px;
+  margin-left: 42px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-family: "OswaldRegular", "Arial Narrow", "Arial", sans-serif;
+  width: 124px;
+}
+
+.meta__day {
+  margin-top: 13px;
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-family: "OswaldRegular", "Arial Narrow", "Arial", sans-serif;
+  width: 124px;
+}
+
+.meta__text {
+  display: block;
+  position: absolute;
+  top: 34px;
+  left: 23px;
+  width: 74px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.meta__cost {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-family: "OswaldRegular", "Arial Narrow", "Arial", sans-serif;
+  margin-top: 23px;
+  margin-left: 46px;
+  margin-bottom: 44px;
+}
+
+.meta-cost__text {
+  margin-right: 4px;
+}
