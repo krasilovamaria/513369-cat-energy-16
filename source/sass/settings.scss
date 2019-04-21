@@ -16,6 +16,7 @@ body {
   line-height: 14px;
   color: $black;
   background-color: $white;
+  background-size: 320px auto;
 }
 
 a {
@@ -40,4 +41,21 @@ img {
   padding-top: 13px;
   padding-bottom: 12px;
   box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 1440px;
+  }
 }

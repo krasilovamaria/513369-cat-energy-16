@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -20,14 +21,14 @@
         <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+            <li class="site-list__item site-list__item--active-index">
+              <a class="site-list__item-link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="site-list__item-link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -38,7 +39,7 @@
       <h1 class="visually-hidden">Cat energy</h1>
       <section class="main-content">
         <div class="main-content__slogan">
-          <h2 class="main-content__title">Функциональное питание для котов</h2>
+          <h2 class="main-content__title main-content__title--margin">Функциональное питание для котов</h2>
           <p class="main-content__intro">Занялся собой? Займись котом!</p>
         </div>
         <img class="main-content__image" src="img/index-can-mobile@1x.png" width="280" height="270"
@@ -104,11 +105,12 @@
               <p class="meta__day">60 дней</p>
               <p class="meta__text">затрачено времени</p>
             </li>
-          </ul>
+            </ul>
           <div class="meta__cost">
             <p class="meta-cost__text">Затраты на питание:</p>
             <p class="meta-cost__value">15 000 руб.</p>
           </div>
+        </ul>
           <div class="example">
             <div class="example__img-before">
               <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="fat cat image">
