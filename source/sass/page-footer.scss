@@ -9,6 +9,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer {
+    justify-content: space-between;
+  }
+}
+
 .page-footer__logo {
   display: inline-block;
   vertical-align: middle;
