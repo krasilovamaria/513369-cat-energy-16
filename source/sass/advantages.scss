@@ -24,6 +24,20 @@
   @include list-reset;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    width: 768px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    width: 1440px;
+  }
+}
+
 .advantages__item {
   position: relative;
   align-items: center;

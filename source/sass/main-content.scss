@@ -2,13 +2,42 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   color: $white;
   min-height: 480px;
-  text-align: center;
   position: relative;
   margin-bottom: 22px;
   font-family: "OswaldRegular", "Arial Narrow", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .main-content {
+    min-height: 738px;
+    width: 708px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-content {
+    min-height: 540px;
+    width: 1440px;
+  }
+}
+
+.main-content__title-catalog {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-top: 28px;
+  margin-bottom: 39px;
+  margin-left: -21px;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .main-content__title-catalog {
+    margin: 0;
+  }
 }
 
 .main-content-color {
@@ -19,8 +48,14 @@
   min-height: 305px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  align-items: center;
   background-color: $green;
+}
+
+@media (min-width: $tablet-width) {
+  .main-content__slogan {
+    background-image: none;
+    background-color: $white;
+  }
 }
 
 .main-content__title {
@@ -32,12 +67,82 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .main-content__title {
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 65px;
+    margin-bottom: 110px;
+    text-align: left;
+    color: $black;
+    width: 510px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-content__title--margin {
+    margin-bottom: 30px;
+  }
+}
+
 .main-content__intro {
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-content__intro {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-align: left;
+  }
 }
 
 .main-content__image {
   position: absolute;
   top: 167px;
   right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-content__image {
+    top: 244px;
+    right: 101px;
+    width: 609px;
+    height: 509px;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-content__image {
+    top: 47px;
+    right: 439px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-content__link {
+    position: absolute;
+    bottom: 164px;
+    left: 0;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-content__link {
+    position: absolute;
+    bottom: 238px;
+    left: 0;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
