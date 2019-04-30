@@ -33,16 +33,22 @@
   padding: 0;
   list-style: none;
   font-family: "OswaldMedium", "Arial Narrow", sans-serif;
-  font-weight: 500;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
     flex-direction: row;
+    font-family: "OswaldRegular", "Arial Narrow", sans-serif;
   }
 }
 
-.site-list__item {
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    margin-right: 55px;
+  }
+}
+
+.main-nav-list__item {
   padding: 24px 0;
   font-size: 20px;
   line-height: 20px;
@@ -51,47 +57,58 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-list__item {
+  .main-nav-list__item {
     font-size: 18px;
     line-height: 25px;
     border: none;
-    padding-right: 36px;
+    padding-right: 35px;
+    padding-top: 30px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .site-list__item:last-child {
+  .main-nav__item:last-child {
     padding-right: 0;
   }
 }
 
-.site-list__item-link {
+@media (min-width: $desktop-width) {
+  .main-nav-list__item {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.main-nav-list__item-link {
   color: $black;
   position: relative;
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav-list__item-link {
+    color: $white;
+  }
+
+  .main-nav-list__item-link-black {
+    color: $black;
+  }
+}
+
 @media (min-width: $tablet-width) {
-  .site-list__item--active::after {
+  .main-nav-list__item--active-index::after {
     position: absolute;
-    bottom: -10px;
-    left: -1px;
+    top: 62px;
+    left: 1px;
     z-index: 10;
     content: "";
-    width: 164px;
+    width: 63px;
     height: 2px;
     background-color: $green;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .site-list__item--active-index::after {
-    position: absolute;
-    bottom: 11px;
-    left: -1px;
-    z-index: 10;
-    content: "";
-    width: 70px;
-    height: 2px;
-    background-color: $green;
+@media (min-width: $desktop-width) {
+  .main-nav-list__item--active-index::after {
+    background-color: $white;
   }
 }

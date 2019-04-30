@@ -10,11 +10,12 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 768px;
+    width: 806px;
     font-size: 18px;
     line-height: 25px;
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 8px;
   }
 }
 
@@ -23,19 +24,21 @@
     width: 1440px;
     font-size: 20px;
     line-height: 25px;
-    justify-content: none;
+    justify-content: space-between;
+    padding-top: 43px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo-image {
     margin-top: 18px;
-    margin-right: 60px;
+    margin-right: 87px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo-image {
     margin-right: 540px;
+    margin-right: 85px;
   }
 }

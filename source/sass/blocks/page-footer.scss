@@ -25,6 +25,7 @@
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     margin-left: 30px;
+    padding-top: 59px;
   }
 }
 
@@ -55,6 +56,13 @@
   padding-left: 25px;
 }
 
+@media (min-width: $tablet-width) {
+  .social {
+    margin-left: 64px;
+    padding-top: 57px;
+  }
+}
+
 .social__item {
   margin-right: 36px;
 }
@@ -73,11 +81,25 @@
   padding: 9px 18px;
 }
 
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 39px;
+    padding-right: 0;
+    padding-left: 73px;
+  }
+}
+
 .copyright__link {
   color: #444444;
   font-size: 16px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link  {
+    padding-right: 14px;
+  }
 }
 
 .copyright__logo {
