@@ -18,7 +18,7 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat energy">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav-list__item main-nav-list__item--active-index">
@@ -42,7 +42,7 @@
           <h2 class="main-content__title">Функциональное питание для котов</h2>
           <p class="main-content__intro">Занялся собой? Займись котом!</p>
           <img class="main-content__image" src="img/index-can-mobile@1x.png" width="280" height="270"
-          alt="Cat energy image">
+            alt="Cat energy image">
           <a class="main-content__link button button-tablet" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -65,7 +65,8 @@
                 <img class="excerpt__image-pro" src="img/icon-cat-pro.svg" width="67" height="28" alt="Cat pro">
               </div>
               <h3 class="excerpt__title">Набор массы</h3>
-              <p class="excerpt__description excerpt__description--pro">Заработать авторитет среди дворовых котов и даже собак?
+              <p class="excerpt__description excerpt__description--pro">Заработать авторитет среди дворовых котов и даже
+                собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="excerpt__link excerpt__link--pro">Каталог pro</a>
             </li>
@@ -113,7 +114,8 @@
           </div>
           <div class="meta-example">
             <div class="meta-example__img-before">
-              <img class="meta-example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="fat cat image">
+              <img class="meta-example__image" src="img/before-mobile@1x.png" width="311" height="232"
+                alt="fat cat image">
             </div>
             <div class="meta-example__slider">
               <div class="meta-example__slider-text">Было</div>
@@ -132,8 +134,8 @@
             <div class="contacts__call">приглашаем <br> к сотрудничеству дилеров!</div>
             <div class="contacts__text">
               <span class="contacts__text--wrap">ул. Большая Конюшенная, д. 19/8</span>
-               Санкт-Петербург
-              </div>
+              Санкт-Петербург
+            </div>
           </div>
           <div class="contacts__map">
             <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" width="320" height="361" alt="Map">
@@ -222,21 +224,22 @@
     </footer>
 
   </div>
-
   <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toogle');
-      navMain.classList.remove('main-nav--nojs');
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 
 </body>
 
