@@ -10,7 +10,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 12px;
-  font-family: "OswaldRegular","Arial",sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,14 +56,14 @@
 .additional__title {
   font-size: 24px;
   line-height: 24px;
-  font-family: "OswaldRegular","Arial",sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   margin: 0;
   font-weight: 400;
   position: relative;
   margin-bottom: 33px;
 
   &::before {
-    content:"";
+    content: "";
     width: 53px;
     height: 3px;
     position: absolute;
@@ -82,7 +82,7 @@
     margin-left: 47px;
 
     &::before {
-      content:"";
+      content: "";
       width: 327px;
       height: 3px;
       position: absolute;
@@ -92,7 +92,7 @@
     }
 
     &::after {
-      content:"";
+      content: "";
       width: 27px;
       height: 3px;
       position: absolute;
@@ -110,7 +110,7 @@
     margin-bottom: 75px;
 
     &::before {
-      content:"";
+      content: "";
       width: 957px;
       height: 3px;
       position: absolute;
@@ -120,7 +120,7 @@
     }
 
     &::after {
-      content:"";
+      content: "";
       width: 69px;
       height: 3px;
       position: absolute;
@@ -194,7 +194,7 @@
 .additional__description {
   display: flex;
   justify-content: space-between;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   color: #444444;
 }
 
@@ -271,7 +271,7 @@
     padding-top: 44px;
     padding-left: 91px;
     padding-right: 120px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     width: 708px;
     height: 200px;
     flex-direction: row;
