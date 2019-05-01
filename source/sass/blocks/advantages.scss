@@ -123,10 +123,8 @@
       left: -1px;
       top: 41px;
     }
-
+    /* счетчик
     &::after {
-    counter-increment: section;
-    content: counter(section)"";
     position: absolute;
 
     left: 120px;
@@ -137,6 +135,7 @@
     color: #f2f2f2;
     z-index: -1;
     }
+    */
   }
 }
 
