@@ -23,11 +23,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -70,6 +65,6 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1440px;
+    width: 1300px;
   }
 }
