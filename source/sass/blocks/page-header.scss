@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-top: 12px;
+  padding-top: 0;
   padding-bottom: 14px;
   padding-left: 20px;
   padding-right: 19px;
@@ -16,6 +16,10 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 8px;
+
+    &--form {
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -25,19 +29,44 @@
     font-size: 20px;
     line-height: 25px;
     justify-content: space-between;
-    padding-top: 43px;
+    padding-top: 31px;
+    padding-left: 30px;
+  }
+
+  .page-header--form {
+    margin-bottom: 52px;
+  }
+}
+
+.page-header__logo-image {
+  flex-grow: 1;
+  width: 190px;
+  height: 65px;
+
+  &:hover {
+  opacity: 0.8;
+}
+
+  &:active {
+  opacity: 0.6;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo-image {
-    margin-top: 18px;
-    margin-right: 87px;
+    width: 174px;
+    height: 59px;
+    margin-left: 10px;
+    margin-top: 24px;
+    margin-right: 94px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo-image {
+    width: 203px;
+    height: 60px;
+    margin-left: 80px;
     margin-right: 85px;
   }
 }

@@ -85,10 +85,17 @@
 
 @media (min-width: $tablet-width) {
   .product__img {
-    width: 161px;
-    height: 172px;
+    width: auto;
     margin-top: -79px;
-    margin-bottom: 69px;
+    margin-bottom: 9px;
+  }
+
+  .product__img--small {
+    height: 172px;
+  }
+
+  .product__img--big {
+    height: 208px;
   }
 }
 

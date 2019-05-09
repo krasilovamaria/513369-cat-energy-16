@@ -74,8 +74,21 @@
 
 @media (min-width: $tablet-width) {
   .advantages__item {
+    counter-increment: section;
     width: 384px;
     margin-bottom: 91px;
+
+    &::before {
+      content: counter(section);
+      position: absolute;
+      left: 120px;
+      top: 5px;
+      font-size: 281px;
+      line-height: 1;
+      font-family: "OswaldRegular", "Arial", sans-serif;
+      color: #f2f2f2;
+      z-index: -1;
+    }
   }
 }
 

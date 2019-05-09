@@ -1,96 +1,169 @@
-@media (min-width: $desktop-width) {
-  .contacts__wrapper {
-    position: relative;
-  }
-}
+.contacts {
+  position: relative;
+  padding-top: 28px;
 
-.contacts__address {
-  display: flex;
-  padding-top: 30px;
-  padding-left: 19px;
-  padding-bottom: 26px;
-  background-color: $white;
-  min-height: 114px;
-}
-
-@media (min-width: $tablet-width) {
-  .contacts__address {
-    padding-top: 63px;
-    padding-left: 34px;
-    padding-right: 70px;
-    padding-bottom: 58px;
+  &--inner-page {
     background-color: #f2f2f2;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .contacts__address {
-    position: absolute;
-    top: 91px;
-    left: 110px;
-    width: 570px;
-    height: 201px;
-    background-color: $white;
-  }
+.contacts__container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 26px;
 }
 
-.contacts__call {
-  width: 143px;
+.contacts__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "OswaldRegular", "Arial Narrow", sans-serif;
+}
+
+.contacts__invite {
+  width: 140px;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  font-family: "OswaldRegular", "Arial Narrow", "Arial", sans-serif;
   font-weight: 400;
-  padding-right: 19px;
+  text-transform: uppercase;
 }
 
-@media (min-width: $tablet-width) {
-  .contacts__call {
-    padding-left: 36px;
-    font-size: 20px;
-    line-height: 25px;
-    width: 216px;
-    margin-right: 273px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts__call {
-    width: 229px;
-    margin-right: 95px;
-  }
-}
-
-.contacts__text {
-  font-size: 14px;
-  line-height: 20px;
-  font-family: "Arial", sans-serif;
-  color: #444444;
+.contacts__address {
   width: 140px;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  font-style: normal;
+  color: #444444;
 }
 
-@media (min-width: $tablet-width) {
-  .contacts__text {
-    width: 173px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: right;
-  }
-}
+.contacts__map-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  max-width: 320px;
+  height: 362px;
+  margin: 0 auto;
+  overflow: hidden;
 
-@media (min-width: $tablet-width) {
-  .contacts__text--wrap {
-    display: block;
-    margin-bottom: 17px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 139px;
+    left: 129px;
+    width: 62px;
+    height: 53px;
+    background: url("../img/map-pin.png") 0 0 no-repeat / contain;
   }
 }
 
 .contacts__map {
-  margin-bottom: -2px;
+  display: block;
+  max-width: none;
+}
+
+.contacts__embed-map {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__map {
+  .contacts {
+    padding-top: 65px;
+  }
+
+  .contacts__container {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 58px;
+    padding-right: 71px;
+    padding-left: 71px;
+  }
+
+  .contacts__invite {
+    width: 160px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    width: 160px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts__city {
+    display: block;
+    padding-top: 18px;
+  }
+
+  .contacts__map-container {
+    max-width: 768px;
+    height: 396px;
+
+    &::after {
+      top: 146px;
+      left: 322px;
+      width: 124px;
+      height: 106px;
+    }
+  }
+
+  .contacts__embed-map {
+    height: 396px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 0;
+  }
+
+  .contacts__container {
+    width: 1300px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 0;
+  }
+
+  .contacts__info {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 570px;
+    height: 201px;
+    padding-top: 65px;
+    padding-right: 85px;
+    padding-bottom: 58px;
+    padding-left: 76px;
+    background-color: $white;
+    overflow: auto;
+  }
+
+  .contacts__address {
+    text-align: left;
+  }
+
+  .contacts__map-container {
+    max-width: 1440px;
+    height: 400px;
+
+    &::after {
+      top: 150px;
+      left: 998px;
+    }
+  }
+
+  .contacts__embed-map {
     height: 400px;
   }
 }
+
