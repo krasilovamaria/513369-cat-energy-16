@@ -37,7 +37,7 @@
       position: absolute;
       z-index: -1;
       top: -147px;
-      right: 0;
+      right: -69px;
       width: 50%;
       min-height: 696px;
       background-position: 0%;
@@ -124,6 +124,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-content__intro {
+    margin-bottom: 52px;
+  }
+}
+
 .main-content__image {
   margin-bottom: 2px;
 }
@@ -131,10 +137,10 @@
 @media (min-width: $tablet-width) {
   .main-content__image {
     position: absolute;
-    top: 225px;
-    right: -3px;
-    height: 614px;
-    width: 697px;
+    top: 228px;
+    right: 31px;
+    height: 609px;
+    width: 709px;
     object-fit: contain;
   }
 }
@@ -163,6 +169,13 @@
     width: 245px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 254px;
+    margin-bottom: 247px;
+  }
+
+  .main-content__image {
+    top: -3px;
+    right: 188px;
+    width: 552px;
+    height: 499px;
   }
 }

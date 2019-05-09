@@ -164,10 +164,8 @@
     height: 2px;
     background-color: $green;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-nav-list__item--active-index::after {
+    .main-nav-list__item--active-index::after {
     background-color: $white;
   }
 }

@@ -663,7 +663,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .program-form__additionally {
     margin-bottom: 29px;
   }
@@ -691,5 +691,45 @@
 
   .questionary__field {
     margin-bottom: 67px;
+  }
+}
+
+.questionary__item--contact {
+  position: relative;
+}
+
+.program-form__email-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  fill: #222222;
+}
+
+.program-form__tel-icon {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  fill: #222222;
+}
+
+@media (min-width: $tablet-width) {
+  .program-form__email-icon {
+    top: 25px;
+  }
+
+  .program-form__tel-icon {
+    top: 24px;
+    right: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-form__email-icon {
+    right: 21px;
+  }
+
+  .program-form__tel-icon {
+    top: 34px;
+    right: 20px;
   }
 }

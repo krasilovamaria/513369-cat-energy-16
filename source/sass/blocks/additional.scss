@@ -145,6 +145,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .additional {
+    margin-bottom: 13px;
+  }
+
   .additional__list {
     margin-right: 82px;
   }
