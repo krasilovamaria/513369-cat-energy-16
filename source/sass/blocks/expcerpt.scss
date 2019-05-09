@@ -16,8 +16,8 @@
 
 @media (min-width: $tablet-width) {
   .expcerpt__wrapper {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
@@ -33,20 +33,22 @@
 
 .excerpt__item {
   position: relative;
-  background-color: #f2f2f2;
-  min-height: 266px;
+
   width: 280px;
+  min-height: 266px;
   margin: 0 auto;
-  padding: 20px;
   margin-bottom: 20px;
+  padding: 20px;
+
+  background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
   .excerpt__item {
     width: 708px;
+    margin-bottom: 30px;
     padding: 52px;
     padding-bottom: 59px;
-    margin-bottom: 30px;
   }
 }
 
@@ -54,12 +56,12 @@
   .excerpt__item {
     width: 570px;
     margin: 0;
-    padding: 0;
-    padding-left: 52px;
-    padding-right: 56px;
-    padding-top: 41px;
-    padding-bottom: 62px;
     margin-left: 80px;
+    padding: 0;
+    padding-top: 41px;
+    padding-right: 56px;
+    padding-bottom: 62px;
+    padding-left: 52px;
   }
 }
 
@@ -68,10 +70,11 @@
 }
 
 .excerpt__image {
-  margin-top: 5px;
-  margin-left: 3px;
   width: 50px;
   height: 50px;
+  margin-top: 5px;
+  margin-left: 3px;
+
   background-color: $green;
   border-radius: 50%;
 }
@@ -81,6 +84,7 @@
     position: absolute;
     top: 87px;
     left: 443px;
+
     width: 200px;
     height: 200px;
   }
@@ -89,10 +93,11 @@
 @media (min-width: $desktop-width) {
   .excerpt__image {
     position: absolute;
-    width: 100px;
-    height: 100px;
     top: 37px;
     left: 50px;
+
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -104,10 +109,12 @@
 
 @media (min-width: $tablet-width) {
   .excerpt__image-slim {
-    width: 141px;
-    height: 194px;
     top: 42%;
     left: 50%;
+
+    width: 141px;
+    height: 194px;
+
     transform: translateX(-50%) translateY(-50%);
   }
 }
@@ -127,11 +134,13 @@
 
 @media (min-width: $tablet-width) {
   .excerpt__image-pro {
-    width: 268px;
-    height: 113px;
-    max-width: none;
     top: 50%;
     left: 50%;
+
+    width: 268px;
+    max-width: none;
+    height: 113px;
+
     transform: translateX(-50%) translateY(-50%);
   }
 }
@@ -144,62 +153,69 @@
 }
 
 .excerpt__title {
-  display: inline-block;
-  vertical-align: middle;
   position: absolute;
   top: 20px;
   left: 20px;
+
+  display: inline-block;
+  margin-top: 11px;
+  margin-bottom: 28px;
+  margin-left: 71px;
+
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  text-transform: uppercase;
-  font-weight: 400;
   font-family: $font;
+  vertical-align: middle;
   text-align: left;
-  margin-top: 11px;
-  margin-left: 71px;
-  margin-bottom: 28px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .excerpt__title {
-    font-size: 36px;
     top: 65px;
     left: -18px;
+
+    font-size: 36px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .excerpt__title {
-    margin-top: 32px;
-    margin-left: 161px;
-    margin-bottom: 36px;
     position: static;
+
+    margin-top: 32px;
+    margin-bottom: 36px;
+    margin-left: 161px;
   }
 }
 
 .excerpt__description {
   width: 240px;
-  padding: 0;
   margin: 0;
   margin-top: 21px;
-  padding-bottom: 22px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #cdcdcd;
+  padding: 0;
+  padding-bottom: 22px;
+
   font-weight: 400;
   font-size: 14px;
-  color: #444444;
   line-height: 18px;
   font-family: "Arial", sans-serif;
   text-align: left;
+  color: #444444;
+
+  border-bottom: 1px solid #cdcdcd;
 }
 
 @media (min-width: $tablet-width) {
   .excerpt__description {
-    font-size: 16px;
-    line-height: 24px;
     width: 377px;
     margin-top: 87px;
     margin-bottom: 33px;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -224,19 +240,21 @@
 }
 
 .excerpt__link {
-  text-transform: uppercase;
-  font-family: "OswaldRegular", "Arial Narrow", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  font-family: "OswaldRegular", "Arial Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
 
   &::after {
-    position: absolute;
-    left: 115px;
-    bottom: 24px;
     content: "";
+    position: absolute;
+    bottom: 24px;
+    left: 115px;
+
     width: 25px;
     height: 12px;
+
     background-image: url("../img/icon-right-arrow-long.svg");
   }
 }
@@ -247,15 +265,15 @@
     line-height: 20px;
 
     &::after {
-      left: 183px;
       bottom: 65px;
+      left: 183px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .excerpt__link--pro::after {
-    left: 177px;
     bottom: 64px;
+    left: 177px;
   }
 }

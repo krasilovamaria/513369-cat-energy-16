@@ -9,26 +9,30 @@
 }
 
 .main-nav__toggle {
+  @include button-reset;
+
+  position: absolute;
+  top: -41px;
+  right: 0;
+
+  display: block;
   width: 25px;
   height: 19px;
-  position: absolute;
-  right: 0;
-  top: -41px;
-  background-color: $white;
-  cursor: pointer;
-  border: none;
-  display: block;
 
-  @include button-reset;
+  background-color: $white;
+  border: none;
+  cursor: pointer;
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
+  position: absolute;
+  top: -3px;
+  right: 1px;
+
   width: 25px;
   height: 19px;
-  position: absolute;
-  right: 1px;
-  top: -3px;
+
   background-image: url("../img/icon-mobile-menu.svg");
 }
 
@@ -39,7 +43,6 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     left: 0;
 
@@ -73,16 +76,18 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  text-align: center;
   margin: 0;
   padding: 0;
+
   list-style: none;
   font-family: "OswaldMedium", "Arial Narrow", sans-serif;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
     flex-direction: row;
+
     font-family: "OswaldRegular", "Arial Narrow", sans-serif;
   }
 }
@@ -95,19 +100,23 @@
 
 .main-nav-list__item {
   padding: 24px 0;
+
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
   border-top: 1px solid $grey;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav-list__item {
+    padding-top: 43px;
+    padding-right: 35px;
+
     font-size: 18px;
     line-height: 25px;
+
     border: none;
-    padding-right: 35px;
-    padding-top: 43px;
   }
 }
 
@@ -126,8 +135,9 @@
 }
 
 .main-nav-list__item-link {
-  color: $black;
   position: relative;
+
+  color: $black;
 }
 
 @media (min-width: $desktop-width) {
@@ -142,30 +152,34 @@
 
 @media (min-width: $tablet-width) {
   .main-nav-list__item--active::after {
-    position: absolute;
     content: "";
+    position: absolute;
     top: 32px;
     left: 1px;
     z-index: 10;
+
     width: 100%;
     height: 2px;
+
     background-color: $green;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav-list__item--active::after {
-    position: absolute;
     content: "";
+    position: absolute;
     top: 35px;
     left: 1px;
     z-index: 10;
+
     width: 100%;
     height: 2px;
+
     background-color: $green;
   }
 
-    .main-nav-list__item--active-index::after {
+  .main-nav-list__item--active-index::after {
     background-color: $white;
   }
 }

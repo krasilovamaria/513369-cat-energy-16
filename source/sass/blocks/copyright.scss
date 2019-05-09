@@ -1,9 +1,10 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
-  font-family: "Arial", sans-serif;
+
   font-size: 16px;
   line-height: 16px;
+  font-family: "Arial", sans-serif;
   color: #444444;
 
   &:hover .copyright__logo-icon,
@@ -21,6 +22,7 @@
 }
 
 .copyright__logo-icon {
-  fill: #666666;
   margin-right: -7px;
+
+  fill: #666666;
 }

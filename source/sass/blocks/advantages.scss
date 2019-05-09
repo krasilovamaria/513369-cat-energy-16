@@ -1,6 +1,7 @@
 @mixin icon {
-  position: absolute;
   content: "";
+  position: absolute;
+
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -23,33 +24,35 @@
 
 @media (min-width: $tablet-width) {
   .advantages__wrapper {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__wrapper {
-    padding-left: 110px;
     padding-right: 110px;
+    padding-left: 110px;
   }
 }
 
 .advantages__title {
+  margin: 0;
+  margin-top: -3px;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-left: 20px;
+
   font-size: 36px;
   line-height: 60px;
   font-family: $font;
-  margin: 0;
-  padding: 0;
-  padding-left: 20px;
-  margin-top: -3px;
-  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages__title {
-    font-size: 60px;
     padding-left: 0;
+
+    font-size: 60px;
   }
 }
 
@@ -60,8 +63,8 @@
 @media (min-width: $tablet-width) {
   .advantages__list {
     display: flex;
-    width: 768px;
     flex-wrap: wrap;
+    width: 768px;
   }
 }
 
@@ -73,27 +76,30 @@
 
 .advantages__item {
   position: relative;
+
+  width: 300px;
   min-height: 60px;
   margin-bottom: 20px;
-  width: 300px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages__item {
-    counter-increment: section;
     width: 384px;
     margin-bottom: 91px;
+
+    counter-increment: section;
 
     &::before {
       content: counter(section);
       position: absolute;
-      left: 120px;
       top: 5px;
+      left: 120px;
+      z-index: -1;
+
       font-size: 281px;
       line-height: 1;
       font-family: "OswaldRegular", "Arial", sans-serif;
       color: #f2f2f2;
-      z-index: -1;
     }
   }
 }
@@ -109,18 +115,21 @@
 .advantages__text {
   margin: 0;
   padding-left: 100px;
-  font-family: "Arial", sans-serif;
-  color: #444444;
+
   font-size: 14px;
   line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
 
   &::before {
-    position: absolute;
     content: "";
+    position: absolute;
+    top: -2px;
+    left: 20px;
+
     width: 60px;
     height: 60px;
-    left: 20px;
-    top: -2px;
+
     background-color: $green;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -129,32 +138,22 @@
 
 @media (min-width: $tablet-width) {
   .advantages__text {
-    counter-reset: section;
+    width: 250px;
+    padding-top: 154px;
+    padding-left: 0;
+
     font-size: 16px;
     line-height: 24px;
-    padding-left: 0;
-    padding-top: 154px;
-    width: 250px;
+
+    counter-reset: section;
 
     &::before {
+      top: 41px;
+      left: -1px;
+
       width: 80px;
       height: 80px;
-      left: -1px;
-      top: 41px;
     }
-    /* счетчик
-    &::after {
-    position: absolute;
-
-    left: 120px;
-    top: 5px;
-    font-size: 281px;
-    line-height: 1;
-    font-family: "OswaldRegular", "Arial", sans-serif;
-    color: #f2f2f2;
-    z-index: -1;
-    }
-    */
   }
 }
 
@@ -167,10 +166,12 @@
 .advantages__icon-leaf::after {
   @include icon;
 
-  width: 26px;
-  height: 29px;
   top: 13px;
   left: 37px;
+
+  width: 26px;
+  height: 29px;
+
   background-image: url("../img/advantage-leaf@1x.png");
 }
 
@@ -184,10 +185,12 @@
 .advantages__icon-powder::after {
   @include icon;
 
-  width: 29px;
-  height: 32px;
   top: 11px;
   left: 36px;
+
+  width: 29px;
+  height: 32px;
+
   background-image: url("../img/advantage-powder@1x.png");
 }
 
@@ -201,10 +204,12 @@
 .advantages__icon-dining::after {
   @include icon;
 
-  width: 24px;
-  height: 30px;
   top: 13px;
   left: 36px;
+
+  width: 24px;
+  height: 30px;
+
   background-image: url("../img/advantage-dining@1x.png");
 }
 
@@ -218,10 +223,12 @@
 .advantages__icon-clock::after {
   @include icon;
 
-  width: 26px;
-  height: 31px;
   top: 13px;
   left: 36px;
+
+  width: 26px;
+  height: 31px;
+
   background-image: url("../img/advantage-clock@1x.png");
 }
 

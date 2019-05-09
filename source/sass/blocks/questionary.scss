@@ -1,16 +1,18 @@
 .questionary {
   width: 280px;
+
   font-size: 16px;
   line-height: 18px;
+  font-family: "OswaldRegular", "Arial Narrow", sans-serif;
   color: #222222;
   text-transform: uppercase;
-  font-family: "OswaldRegular", "Arial Narrow", sans-serif;
 }
 
 @media (min-width: $tablet-width) {
   .questionary {
     width: 670px;
     padding-left: 42px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -66,8 +68,9 @@
 }
 
 .questionary__label {
-  white-space: nowrap;
   margin-right: 15px;
+
+  white-space: nowrap;
 }
 
 
@@ -82,52 +85,57 @@
   height: 45px;
   margin: 0;
   padding-left: 15px;
+
   font-size: 16px;
   line-height: 18px;
+  font-family: "OswaldRegular", "Arial Narrow", sans-serif;
   color: #444444;
   text-transform: uppercase;
-  font-family: "OswaldRegular", "Arial Narrow", sans-serif;
-  opacity: 0.5;
+
   border: solid 1px #cdcdcd;
   outline: none;
+  opacity: 0.5;
 }
 
 @media (min-width: $tablet-width) {
   .questionary__input {
     height: 52px;
-    font-size: 20px;
-    line-height: 20px;
     margin-top: 5px;
     padding-left: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .questionary__info-about {
   width: 320px;
+  margin-bottom: 31px;
   padding-top: 21px;
   padding-bottom: 22px;
+
   border: solid 1px #ededed;
-  margin-bottom: 31px;
 }
 
 .program-form__goal {
-  margin: 0 auto;
-  padding: 0;
   box-sizing: border-box;
   width: 320px;
-  padding-top: 21px;
-  padding-left: 20px;
-  padding-bottom: 22px;
-  border: solid 1px #ededed;
-  margin-left: -20px;
+  margin: 0 auto;
   margin-bottom: 29px;
+  margin-left: -20px;
+  padding: 0;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
+  border: solid 1px #ededed;
 }
 
 @media (min-width: $tablet-width) {
   .program-form__goal {
     width: 630px;
-    margin-left: 0;
     margin-bottom: 73px;
+    margin-left: 0;
   }
 }
 
@@ -145,6 +153,7 @@
 
 .program-form__goal-item {
   position: relative;
+
   margin-bottom: 12px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -158,9 +167,11 @@
 .program-form__label {
   align-self: center;
   margin-right: 13px;
+
   font-size: 16px;
-  text-transform: uppercase;
   color: #222222;
+  text-transform: uppercase;
+
   cursor: pointer;
 
   &--goal-label {
@@ -171,9 +182,11 @@
       position: absolute;
       top: 0;
       left: 0;
+
       box-sizing: border-box;
       width: 30px;
       height: 30px;
+
       border: 1px solid #cdcdcd;
       border-radius: 50%;
     }
@@ -197,20 +210,24 @@
     position: absolute;
     top: 9px;
     left: 9px;
+
     width: 12px;
     height: 12px;
+
     background-color: $green;
     border-radius: 50%;
   }
 }
 
 .questionary__title {
+  position: relative;
+
+  margin-bottom: 34px;
   padding: 0;
-  text-transform: none;
+
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 34px;
-  position: relative;
+  text-transform: none;
 
   &--contact::before {
     content: "";
@@ -218,8 +235,10 @@
     top: 14px;
     left: 202px;
     z-index: -1;
+
     width: 99px;
     height: 3px;
+
     background-color: $green;
   }
 
@@ -229,8 +248,10 @@
     top: 11px;
     left: 144px;
     z-index: -1;
+
     width: 158px;
     height: 3px;
+
     background-color: $green;
   }
 
@@ -240,19 +261,23 @@
     top: 14px;
     left: 165px;
     z-index: -1;
+
     width: 136px;
     height: 3px;
+
     background-color: $green;
   }
 }
 
 @media (min-width: $tablet-width) {
   .questionary__title {
-    font-size: 36px;
-    line-height: 36px;
+    position: relative;
+
     margin-bottom: 34px;
     margin-left: -2px;
-    position: relative;
+
+    font-size: 36px;
+    line-height: 36px;
 
     &--contact::before {
       content: "";
@@ -260,8 +285,10 @@
       top: 23px;
       left: 551px;
       z-index: -1;
+
       width: 145px;
       height: 3px;
+
       background-color: $green;
     }
 
@@ -271,8 +298,10 @@
       top: 24px;
       left: 218px;
       z-index: -1;
+
       width: 481px;
       height: 3px;
+
       background-color: $green;
     }
 
@@ -282,8 +311,10 @@
       top: 22px;
       left: 249px;
       z-index: -1;
+
       width: 450px;
       height: 3px;
+
       background-color: $green;
     }
 
@@ -295,8 +326,10 @@
       top: 23px;
       left: -71px;
       z-index: -1;
+
       width: 30px;
       height: 3px;
+
       background-color: $green;
     }
   }
@@ -304,11 +337,13 @@
 
 @media (min-width: $desktop-width) {
   .questionary__title {
-    font-size: 36px;
-    line-height: 36px;
+    position: relative;
+
     margin-bottom: 34px;
     margin-left: -2px;
-    position: relative;
+
+    font-size: 36px;
+    line-height: 36px;
 
     &--contact::before {
       content: "";
@@ -316,8 +351,10 @@
       top: 20px;
       left: 556px;
       z-index: -1;
+
       width: 779px;
       height: 3px;
+
       background-color: $green;
     }
 
@@ -327,8 +364,10 @@
       top: 20px;
       left: 219px;
       z-index: -1;
+
       width: 1113px;
       height: 3px;
+
       background-color: $green;
     }
 
@@ -338,8 +377,10 @@
       top: 20px;
       left: 252px;
       z-index: -1;
+
       width: 1080px;
       height: 3px;
+
       background-color: $green;
     }
 
@@ -351,8 +392,10 @@
       top: 20px;
       left: -93px;
       z-index: -1;
+
       width: 54px;
       height: 3px;
+
       background-color: $green;
     }
   }
@@ -395,26 +438,28 @@
 }
 
 .questionary__comment-text {
-  opacity: 0.5;
-  border: solid 1px #cdcdcd;
-  text-transform: uppercase;
+  width: 280px;
+  height: 150px;
+  padding-top: 10px;
+  padding-left: 13px;
+
   font-size: 16px;
   line-height: 18px;
+  font-family: "OswaldRegular", "Arial Narrow", sans-serif;
   text-align: left;
   color: #444444;
-  font-family: "OswaldRegular", "Arial Narrow", sans-serif;
-  padding-left: 13px;
-  padding-top: 10px;
-  height: 150px;
-  width: 280px;
+  text-transform: uppercase;
+
+  border: solid 1px #cdcdcd;
+  opacity: 0.5;
 
   &::placeholder {
-    text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
+    font-family: "OswaldRegular", "Arial Narrow", sans-serif;
     text-align: left;
     color: #444444;
-    font-family: "OswaldRegular", "Arial Narrow", sans-serif;
+    text-transform: uppercase;
   }
 }
 
@@ -429,12 +474,13 @@
   }
 
   .questionary__comment-text {
-    font-size: 20px;
-    line-height: 30px;
-    padding-left: 16px;
-    padding-top: 10px;
     width: 631px;
     height: 174px;
+    padding-top: 10px;
+    padding-left: 16px;
+
+    font-size: 20px;
+    line-height: 30px;
 
     &::placeholder {
       font-size: 20px;
@@ -464,17 +510,20 @@
 }
 
 .program-form__additional-list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .program-form__label {
   align-self: center;
   margin-right: 13px;
+
   font-size: 16px;
-  text-transform: uppercase;
   color: #222222;
+  text-transform: uppercase;
+
   cursor: pointer;
 
   &--add-label {
@@ -485,9 +534,11 @@
       position: absolute;
       top: 0;
       left: 0;
+
       box-sizing: border-box;
       width: 30px;
       height: 30px;
+
       border: 1px solid #cdcdcd;
     }
   }
@@ -495,6 +546,7 @@
 
 .program-form__additional-item {
   position: relative;
+
   margin-bottom: 12px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -522,8 +574,10 @@
     position: absolute;
     top: 7px;
     left: 5px;
+
     width: 21px;
     height: 16px;
+
     background: url("../img/icon-tick.svg") 0 0 no-repeat;
   }
 }
@@ -541,17 +595,19 @@
 }
 
 .questionary__warning {
-  text-align: center;
+  margin: 0;
+
   font-size: 14px;
   line-height: 16px;
-  text-transform: none;
-  margin: 0;
   font-family: "Arial", "Tahoma", sans-serif;
+  text-align: center;
+  text-transform: none;
 }
 
 @media (min-width: $tablet-width) {
   .program-form__label {
     margin-right: 16px;
+
     font-size: 20px;
     line-height: 20px;
 
@@ -565,6 +621,7 @@
     height: 52px;
     padding-right: 18px;
     padding-left: 18px;
+
     font-size: 20px;
     line-height: 20px;
 
@@ -577,6 +634,7 @@
   .program-form__goal-radio:checked + .program-form__label--goal-label::after {
     top: 11px;
     left: 11px;
+
     width: 18px;
     height: 18px;
   }
@@ -586,6 +644,7 @@
     padding-right: 27px;
     padding-bottom: 25px;
     padding-left: 27px;
+
     border: 1px solid #cdcdcd;
   }
 
@@ -598,15 +657,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program-form__label::before  {
-      width: 40px;
-      height: 40px;
-    }
+  .program-form__label::before {
+    width: 40px;
+    height: 40px;
+  }
 
   .program-form__input {
     height: 52px;
     padding-right: 18px;
     padding-left: 18px;
+
     font-size: 20px;
     line-height: 20px;
 
@@ -656,10 +716,11 @@
   }
 
   .questionary__warning {
-    font-size: 16px;
-    line-height: 16px;
     margin-top: 12px;
     margin-left: 61px;
+
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -702,6 +763,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
+
   fill: #222222;
 }
 
@@ -709,6 +771,7 @@
   position: absolute;
   top: 17px;
   right: 16px;
+
   fill: #222222;
 }
 
