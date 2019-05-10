@@ -33,10 +33,10 @@
   &--facebook {
     padding-right: 6px;
   }
-}
 
-.social-list__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-list__link-icon {
@@ -93,9 +93,7 @@
       }
     }
   }
-}
 
-@media (min-width: $tablet-width) {
   .social-list {
     max-width: 570px;
   }

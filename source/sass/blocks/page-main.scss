@@ -1,3 +1,5 @@
+//Mobile//
+
 .page-main__form {
   width: 280px;
   margin: 0 auto;
@@ -5,28 +7,10 @@
   padding-right: 20px;
 }
 
-@media (min-width: $tablet-width) {
-  .page-main__form {
-    width: 708px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-main__form {
-    width: 1080px;
-  }
-}
-
 .page-main__wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 37px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-main__wrapper {
-    margin-bottom: 63px;
-  }
 }
 
 .page-main__title {
@@ -40,16 +24,6 @@
   font-family: "OswaldRegular", "Arial Narrow", sans-serif;
 }
 
-@media (min-width: $tablet-width) {
-  .page-main__title {
-    width: 445px;
-    margin-bottom: 53px;
-
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-
 .page-main__slogan {
   margin: 0;
 
@@ -60,7 +34,25 @@
   text-transform: uppercase;
 }
 
+//Tablet//
+
 @media (min-width: $tablet-width) {
+  .page-main__form {
+    width: 708px;
+  }
+
+  .page-main__wrapper {
+    margin-bottom: 63px;
+  }
+
+  .page-main__title {
+    width: 445px;
+    margin-bottom: 53px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .page-main__slogan {
     width: 329px;
     margin-left: 40px;
@@ -70,7 +62,13 @@
   }
 }
 
+//Desktop//
+
 @media (min-width: $desktop-width) {
+  .page-main__form {
+    width: 1080px;
+  }
+
   .page-main__slogan {
     margin-left: 0;
   }

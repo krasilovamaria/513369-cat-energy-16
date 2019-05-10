@@ -1,6 +1,10 @@
+//Mobile//
+
 .example-result {
   padding-top: 17px;
   padding-bottom: 36px;
+
+  font-family: "OswaldRegular", "Arial", sans-serif;
 
   background-color: #f2f2f2;
 }
@@ -159,6 +163,8 @@
 .example-result__toggle {
   display: none;
 }
+
+//Tablet//
 
 @media (min-width: $tablet-width) {
   .example-result {
@@ -398,6 +404,8 @@
     }
   }
 }
+
+//Desktop//
 
 @media (min-width: $desktop-width) {
   .example-result {

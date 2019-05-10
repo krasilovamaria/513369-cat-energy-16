@@ -1,3 +1,5 @@
+//Mobile//
+
 .page-footer__links {
   padding-top: 39px;
   padding-bottom: 22px;
@@ -35,6 +37,8 @@
   width: 100%;
 }
 
+//Tablet//
+
 @media (min-width: $tablet-width) {
   .page-footer__links {
     padding-top: 52px;
@@ -60,6 +64,8 @@
     margin-left: auto;
   }
 }
+
+//Desktop//
 
 @media (min-width: $desktop-width) {
   .page-footer__links {
