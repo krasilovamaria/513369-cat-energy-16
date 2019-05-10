@@ -19,6 +19,10 @@
   @include list-reset;
 }
 
+.questionary__wrap {
+  margin-bottom: 22px;
+}
+
 .questionary__item {
   display: flex;
   align-items: center;
@@ -171,6 +175,10 @@
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .questionary__wrap {
+    margin-bottom: 0;
   }
 
   .questionary__info-user {

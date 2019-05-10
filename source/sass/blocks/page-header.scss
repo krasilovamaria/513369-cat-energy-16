@@ -10,6 +10,14 @@
   padding-left: 20px;
 }
 
+.page-header--index {
+  padding-bottom: 0;
+}
+
+.page-header--catalog {
+  padding-bottom: 5px;
+}
+
 .page-header__logo-image {
   flex-grow: 1;
   width: 190px;
@@ -31,7 +39,7 @@
     flex-direction: row;
     justify-content: flex-start;
     width: 806px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 
     font-size: 18px;
     line-height: 25px;
@@ -58,6 +66,7 @@
     width: 1300px;
     padding-top: 31px;
     padding-left: 30px;
+    margin-bottom: 8px;
 
     font-size: 20px;
     line-height: 25px;
