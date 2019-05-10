@@ -151,8 +151,14 @@
 @media (min-width: $tablet-width) {
   .program-form__goal {
     width: 630px;
+    padding-top: 24px;
+    padding-right: 27px;
+    padding-bottom: 25px;
+    padding-left: 27px;
     margin-bottom: 73px;
     margin-left: 0;
+
+    border: 1px solid #cdcdcd;
   }
 
   .program-form__label {
@@ -173,15 +179,6 @@
 
     width: 18px;
     height: 18px;
-  }
-
-  .program-form__goal {
-    padding-top: 24px;
-    padding-right: 27px;
-    padding-bottom: 25px;
-    padding-left: 27px;
-
-    border: 1px solid #cdcdcd;
   }
 
   .program-form__goal-item {
