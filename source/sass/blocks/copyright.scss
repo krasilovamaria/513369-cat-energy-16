@@ -1,0 +1,28 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+
+  &:hover .copyright__logo-icon,
+  &:focus .copyright__logo-icon {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__name {
+  margin-top: 17px;
+}
+
+.copyright__logo-icon {
+  margin-right: -7px;
+
+  fill: #666666;
+}

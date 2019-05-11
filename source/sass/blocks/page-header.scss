@@ -1,43 +1,85 @@
+//Mobile//
+
 .page-header {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  padding-top: 12px;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-right: 19px;
   padding-bottom: 14px;
   padding-left: 20px;
-  padding-right: 19px;
 }
+
+.page-header--index {
+  padding-bottom: 0;
+}
+
+.page-header--catalog {
+  padding-bottom: 5px;
+}
+
+.page-header__logo-image {
+  flex-grow: 1;
+  width: 190px;
+  height: 65px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+//Tablet//
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 806px;
-    font-size: 18px;
-    line-height: 25px;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 8px;
+    width: 806px;
+    margin-bottom: 16px;
+
+    font-size: 18px;
+    line-height: 25px;
+
+    &--form {
+      margin-bottom: 35px;
+    }
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+    margin-top: 24px;
+    margin-right: 94px;
+    margin-left: 10px;
   }
 }
+
+//Desktop//
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1440px;
+    justify-content: space-between;
+    width: 1300px;
+    padding-top: 31px;
+    padding-left: 30px;
+    margin-bottom: 8px;
+
     font-size: 20px;
     line-height: 25px;
-    justify-content: space-between;
-    padding-top: 43px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .page-header__logo-image {
-    margin-top: 18px;
-    margin-right: 87px;
+  .page-header--form {
+    margin-bottom: 52px;
   }
-}
 
-@media (min-width: $desktop-width) {
   .page-header__logo-image {
+    width: 203px;
+    height: 60px;
     margin-right: 85px;
+    margin-left: 80px;
   }
 }

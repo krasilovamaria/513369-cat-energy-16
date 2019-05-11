@@ -1,39 +1,44 @@
+//Mobile//
+
 .main-nav {
   position: relative;
 }
 
 .main-nav__toggle {
+  @include button-reset;
+
+  position: absolute;
+  top: -41px;
+  right: 0;
+
+  display: block;
   width: 25px;
   height: 19px;
-  position: absolute;
-  right: 0;
-  top: -27px;
-  background-color: $white;
-  cursor: pointer;
-  border: none;
-  display: block;
 
-  @include button-reset;
+  background-color: $white;
+  border: none;
+  cursor: pointer;
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
+  position: absolute;
+  top: -3px;
+  right: 1px;
+
   width: 25px;
   height: 19px;
-  position: absolute;
-  right: 1px;
-  top: -3px;
+
   background-image: url("../img/icon-mobile-menu.svg");
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -32px;
+  top: -47px;
   right: 1px;
 
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     left: 0;
 
@@ -52,104 +57,31 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    display: block;
-  }
-}
-
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  text-align: center;
   margin: 0;
   padding: 0;
+
   list-style: none;
   font-family: "OswaldMedium", "Arial Narrow", sans-serif;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__list {
-    flex-direction: row;
-    font-family: "OswaldRegular", "Arial Narrow", sans-serif;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__list {
-    margin-right: 55px;
-  }
+  text-align: center;
 }
 
 .main-nav-list__item {
   padding: 24px 0;
+
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
   border-top: 1px solid $grey;
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav-list__item {
-    font-size: 18px;
-    line-height: 25px;
-    border: none;
-    padding-right: 35px;
-    padding-top: 30px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__item:last-child {
-    padding-right: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav-list__item {
-    font-size: 20px;
-    line-height: 25px;
-  }
-}
-
 .main-nav-list__item-link {
-  color: $black;
   position: relative;
-}
 
-@media (min-width: $desktop-width) {
-  .main-nav-list__item-link {
-    color: $white;
-  }
-
-  .main-nav-list__item-link-black {
-    color: $black;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav-list__item--active-index::after {
-    position: absolute;
-    top: 62px;
-    left: 1px;
-    z-index: 10;
-    content: "";
-    width: 63px;
-    height: 2px;
-    background-color: $green;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav-list__item--active-index::after {
-    background-color: $white;
-  }
+  color: $black;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -163,5 +95,93 @@
 
   .main-nav--nojs .main-nav__toggle {
     display: block;
+  }
+}
+
+//Tablet//
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+
+    font-family: "OswaldRegular", "Arial Narrow", sans-serif;
+  }
+
+  .main-nav-list__item {
+    padding-top: 43px;
+    padding-right: 35px;
+
+    font-size: 18px;
+    line-height: 25px;
+
+    border: none;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .main-nav-list__item--active::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 1px;
+    z-index: 10;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $green;
+  }
+}
+
+//Desktop//
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    margin-right: -141px;
+  }
+
+  .main-nav__list {
+    margin-right: 55px;
+  }
+
+  .main-nav-list__item {
+    font-size: 20px;
+    line-height: 25px;
+    color: #111111;
+  }
+
+  .main-nav-list__item-link {
+    color: $white;
+  }
+
+  .main-nav-list__item-link--black {
+    color: $black;
+  }
+
+  .main-nav-list__item--active::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 1px;
+    z-index: 10;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $green;
+  }
+
+  .main-nav-list__item--active-index::after {
+    background-color: $white;
   }
 }

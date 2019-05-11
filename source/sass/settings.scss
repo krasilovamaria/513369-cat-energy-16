@@ -17,6 +17,7 @@ body {
   color: $black;
   background-color: $white;
   background-size: 320px auto;
+  counter-reset: section;
 }
 
 a {
