@@ -54,6 +54,19 @@
   border: solid 1px #cdcdcd;
   outline: none;
   opacity: 0.5;
+
+  &:focus,
+  &:hover {
+    opacity: none;
+  }
+
+  &:active {
+    border: solid 2px #444444;
+  }
+
+  &:invalid {
+    border: solid 2px #ff8282;
+  }
 }
 
 .questionary__title {
@@ -133,6 +146,19 @@
     text-align: left;
     color: #444444;
     text-transform: uppercase;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: none;
+  }
+
+  &:active {
+    border: solid 2px #444444;
+  }
+
+  &:invalid {
+    border: solid 2px #ff8282;
   }
 }
 

@@ -101,6 +101,14 @@
 
     background-image: url("../img/icon-right-arrow-long.svg");
   }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 //Tablet//
@@ -245,5 +253,20 @@
 
   .excerpt__description--pro {
     width: 462px;
+  }
+
+  .excerpt__link {
+
+    &:hover::after,
+    &:focus::after {
+      content: "";
+      position: absolute;
+      bottom: 65px;
+      left: 184px;
+
+      width: 33px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
