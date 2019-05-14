@@ -331,7 +331,7 @@
 
   .questionary__field {
     display: flex;
-    margin-bottom: 53px;
+    margin-bottom: 56px;
   }
 
   .questionary__warning {
@@ -452,6 +452,14 @@
     margin-bottom: 67px;
   }
 
+  .questionary__title--comment {
+    margin-bottom: 76px;
+  }
+
+  .questionary__title--additional {
+    margin-bottom: 58px;
+  }
+
   .questionary__comment-text {
     width: 1220px;
   }
@@ -461,6 +469,6 @@
   }
 
   .questionary__field {
-    margin-bottom: 67px;
+    margin-bottom: 61px;
   }
 }

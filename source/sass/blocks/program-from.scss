@@ -277,10 +277,18 @@
 
   .program-form__email-icon {
     right: 21px;
+
+    &:active {
+      fill: #68b738;
+    }
   }
 
   .program-form__tel-icon {
     top: 34px;
     right: 20px;
+
+    &:active {
+      fill: #68b738;
+    }
   }
 }

@@ -125,8 +125,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: -147px;
-      right: -69px;
+      top: -132px;
+      right: 0;
       z-index: -1;
 
       width: 50%;
@@ -145,10 +145,10 @@
   }
 
   .main-content__wrapper {
-    width: 1440px;
+    width: 1300px;
     min-height: 540px;
-    padding-top: 78px;
-    padding-left: 192px;
+    padding-top: 92px;
+    padding-left: 122px;
 
     background-color: transparent;
   }
@@ -162,8 +162,8 @@
   }
 
   .main-content__image {
-    top: -3px;
-    right: 188px;
+    top: 11px;
+    right: 257px;
 
     width: 552px;
     height: 499px;
