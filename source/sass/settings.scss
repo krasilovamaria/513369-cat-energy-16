@@ -51,6 +51,16 @@ input[type="radio"].visually-hidden {
   padding-top: 13px;
   padding-bottom: 12px;
   box-sizing: border-box;
+
+  &:focus,
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #99c681;
+  }
 }
 
 .container {

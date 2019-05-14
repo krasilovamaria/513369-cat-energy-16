@@ -151,7 +151,7 @@
   }
 
   .main-nav__list {
-    margin-right: 55px;
+    margin-right: 160px;
   }
 
   .main-nav-list__item {
@@ -162,10 +162,28 @@
 
   .main-nav-list__item-link {
     color: $white;
+
+    &:focus,
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .main-nav-list__item-link--black {
     color: $black;
+
+    &:focus,
+    &:hover {
+      color: rgba(17, 17, 17, 0.6);
+    }
+
+    &:active {
+      color: rgba(17, 17, 17, 0.3);
+    }
   }
 
   .main-nav-list__item--active::after {

@@ -101,6 +101,23 @@
 
     background-image: url("../img/icon-right-arrow-long.svg");
   }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+    opacity: 0.3;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 120px;
+
+    width: 33px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
 }
 
 //Tablet//
@@ -180,6 +197,18 @@
       bottom: 65px;
       left: 183px;
     }
+
+    &:hover::after,
+    &:focus::after {
+      content: "";
+      position: absolute;
+      bottom: 65px;
+      left: 184px;
+
+      width: 33px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 
   .excerpt__link--pro::after {
@@ -193,6 +222,12 @@
 @media (min-width: $desktop-width) {
   .excerpt {
     margin-bottom: 76px;
+  }
+
+  .expcerpt__wrapper {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: -40px;
   }
 
   .excerpt__list {
@@ -218,6 +253,8 @@
     width: 100px;
     height: 100px;
 
+    margin-top: 9px;
+
     &--slim {
       width: 71px;
       height: 97px;
@@ -239,11 +276,25 @@
 
   .excerpt__description {
     width: 462px;
-    margin-top: 36px;
+    margin-top: 38px;
     margin-bottom: 9px;
   }
 
   .excerpt__description--pro {
     width: 462px;
+  }
+
+  .excerpt__link {
+    &:hover::after,
+    &:focus::after {
+      content: "";
+      position: absolute;
+      bottom: 65px;
+      left: 184px;
+
+      width: 33px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
