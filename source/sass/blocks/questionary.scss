@@ -160,6 +160,10 @@
   &:invalid {
     border: solid 2px #ff8282;
   }
+
+  &:valid {
+    border: solid 1px #cdcdcd;
+  }
 }
 
 .questionary__comment {
