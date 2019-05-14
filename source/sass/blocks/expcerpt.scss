@@ -104,10 +104,19 @@
 
   &:active {
     color: rgba(17, 17, 17, 0.3);
+    opacity: 0.3;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:hover::after,
+  &:focus::after {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 120px;
+
+    width: 33px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 }
 
@@ -188,6 +197,18 @@
       bottom: 65px;
       left: 183px;
     }
+
+    &:hover::after,
+    &:focus::after {
+      content: "";
+      position: absolute;
+      bottom: 65px;
+      left: 184px;
+
+      width: 33px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 
   .excerpt__link--pro::after {
@@ -264,7 +285,6 @@
   }
 
   .excerpt__link {
-
     &:hover::after,
     &:focus::after {
       content: "";

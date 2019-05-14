@@ -60,15 +60,15 @@
 }
 
 .program-form__label--goal-label::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #cdcdcd;
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
 }
 
 .program-form__goal-radio {
