@@ -432,12 +432,11 @@
 
   .example-result__container {
     width: 1300px;
-    padding-right: 40px;
+    padding-right: 0;
     padding-left: 40px;
     display: flex;
     box-sizing: border-box;
     margin: 0 auto;
-    padding-right: 0;
   }
 
   .example-result__description {
