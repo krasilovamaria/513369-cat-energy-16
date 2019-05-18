@@ -32,6 +32,15 @@
 
 @media (min-width: $tablet-width) {
   .copyright__logo-icon {
+    margin-right: -6px;
+    margin-top: -2px;
+    width: 38px;
+    height: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__logo-icon {
     margin-right: -2px;
     margin-top: -10px;
     width: 37px;

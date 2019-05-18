@@ -40,6 +40,10 @@
   color: #444444;
 }
 
+.product__title {
+  color: $black;
+}
+
 //Tablet//
 
 @media (min-width: $tablet-width) {

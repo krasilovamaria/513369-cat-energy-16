@@ -6,18 +6,20 @@
   margin-bottom: -5px;
 
   &::before {
+    display: block;
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
 
-    display: block;
-    width: 320px;
+    width: 100%;
     height: 305px;
 
     background-color: $green;
     background-image: url("../img/index-background-mobile@1x.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 }

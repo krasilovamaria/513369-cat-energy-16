@@ -65,17 +65,37 @@ input[type="radio"].visually-hidden {
 
 .container {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
+}
+
+.container--index {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 377px) {
+  .space {
+    content: "";
+  }
+
+  .space:after {
+    content: "\00a0"
+  }
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 768px;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1300px;
+    width: 100%;
   }
 }

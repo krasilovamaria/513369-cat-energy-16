@@ -64,7 +64,7 @@
     border: solid 2px #444444;
   }
 
-  &:invalid {
+  &:hover:invalid {
     border: solid 2px #ff8282;
   }
 }
@@ -157,7 +157,7 @@
     border: solid 2px #444444;
   }
 
-  &:invalid {
+  &:hover:invalid {
     border: solid 2px #ff8282;
   }
 
