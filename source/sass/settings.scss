@@ -83,7 +83,7 @@ input[type="radio"].visually-hidden {
     content: "";
 
     &::after {
-      content: "\00a0"
+      content: "\00a0";
     }
   }
 }
